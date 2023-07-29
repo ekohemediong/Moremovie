@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="theme-color" content="red"/>
+    
+    
+    <title>Moremovie</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+        
+      @keyframes dot1{
+          from{
+              top:-6%;
+              right:10%;
+          }
+          to{
+              top:100%;
+              right:-25%;
+          }
+      }
+      @keyframes dot2{
+          from{
+              top:-3%;
+              right:5%;
+              
+          }
+          to{
+              top:100%;
+              right:-3%;
+          }
+      }
+      @keyframes dot3{
+          from{
+              top:-48%;
+              left:5%;
+          }
+          to{
+              top:100%;
+              left:98%;
+          }
+      }
+       @keyframes dot4{
+          from{
+              top:90%;
+              left:-2%;
+          }
+          to{
+              top:100%;
+              left:100%;
+          }
+      }
+      body{
+          margin:0;
+          background:black;
+      }
+      *{
+          font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif;
+      }
+      header{
+          position:sticky;
+          position:-webkit-sticky;
+          width:100%;
+          top:0;
+          background:rgba(27,18,18,0.5);
+          
+      }
+      .introImg{
+          width:100%;
+      }
+      nav{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+         # box-shadow:0 0 5px lightgray;
+          max-width:100%;
+      }
+      #logo{
+          font-size:1.2rem;
+          font-weight:800;
+          color:white;
+      } 
+      #imageSlideCon1{
+          display:flex;
+          flex-flow:row nowrap;
+          flex-basis:5%;
+          height:30vh;
+          width:500%;
+          justify-content:space-between;
+          #background:red;
+      } 
+      .imageSlide{
+          display:block;
+          margin:0.2rem 1rem;
+          width:80%;
+          border-radius:1rem;
+      }
+      section{
+         overflow:scroll;
+         #background:green;
+         width:100%;
+         height:30vh;
+      }
+      .identifyType{
+          text-align:justify;
+          padding:0 1rem;
+          font-size:1.3rem;
+          font-weight:900;
+          color:white;
+      }
+      .dot1{
+          animation:dot1 5s ease-in-out 3s infinite reverse;
+          position:fixed;
+          top:-6%;
+          right:10%;
+          width:2%;
+          height:0.9vh;
+          border-radius:50%;
+          background:blue;
+      }
+      .dot2{
+          animation:dot2 5s ease-in-out 1s infinite reverse;
+          position:fixed;
+          top:-3;
+          right:-5%;
+          width:2%;
+          height:0.9vh;
+          border-radius:50%;
+          background:pink;
+      }
+      .dot3{
+         animation:dot3 5s ease-in-out 4s infinite reverse;
+          position:fixed;
+          top:-48%;
+          left:5%;
+          width:2%;
+          height:0.9vh;
+          border-radius:50%;
+          background:purple; 
+      }
+      .dot4{
+         animation:dot4 5s ease-in-out 3.5s infinite reverse;
+          position:fixed;
+          top:50%;
+          left:-2%;
+          width:2%;
+          height:0.9vh;
+          border-radius:50%;
+          background:yellow; 
+      }
+      .menu{
+          position:fixed;
+          bottom:0;
+          z-index:2;
+          display:flex;
+          flex-flow:row nowrap;
+          justify-content:space-between;
+          width:100%;
+          background:rgba(27,18,18,0.5);
+      }
+      .icon{
+         background:rgba(225,225,225,0.5);
+         display:inline-block;
+         width:10%;
+         height:8vh;
+      }
+      .circleCon{
+          display:flex;
+          justify-content:center;
+          
+      }
+      .c{
+          width:5%;
+          height:3vh;
+          margin:0.2rem;
+          opacity:0.5;
+          background:gray;
+          border-radius:50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="slider">
+       <div class="sliderImgHold">
+    <img src="extraction.jpeg" alt="" class="introImg">
+       </div>
+    </div>
+    <div class="circleCon">
+        <div class="circle1 c"></div>
+        <div class="circle2 c"></div>
+        <div class="circle3 c"></div>
+    </div>
+   <header>
+       
+       <nav>
+           <p id="logo">Moremovie</p>
+       </nav>
+   </header> 
+   <br/>
+   <br/>
+   <div class="dot1"></div>
+   <div class="dot2"></div>
+   <div class="dot3"></div>
+   <div class="dot4"></div>
+   <p class="identifyType">For you</p>
+   <section>
+       <div id="imageSlideCon1">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+       </div>
+   </section>
+   
+   <p class="identifyType">Blockbuster</p>
+   <section>
+       <div id="imageSlideCon1">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+       </div>
+   </section>
+   
+   <p class="identifyType">Horror</p>
+   <section>
+       <div id="imageSlideCon1">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+       </div>
+   </section>
+   
+   <p class="identifyType">Love and magic</p>
+   <section>
+       <div id="imageSlideCon1">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+       </div>
+   </section>
+   
+   <p class="identifyType">Series</p>
+   <section>
+       <div id="imageSlideCon1">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+           <img src="image1.jpeg" alt="" class="imageSlide">
+           <img src="image2.jpeg" alt="" class="imageSlide">
+           <img src="image3.jpeg" alt="" class="imageSlide">
+       </div>
+   </section>
+   <br/>
+   <br/>
+ <div class="menu">
+     <img src="menu.png" alt="" class="icon">
+     <img src="profile.png" alt="" class="icon">
+ </div>
+ 
+ 
+ <script>
+     var images =["image1.jpeg","image2.jpeg","extraction.jpeg"]
+     var state =0
+     var pag=document.getElementsByClassName("c")
+     function image(){
+         document.getElementsByClassName("introImg")[0].src=images[state]
+         
+         pag[state].style.background="white"
+         state++
+         if(state == 3){
+             state=0
+             
+         }
+         
+     }
+     
+     function changeImage(){
+       
+      setTimeout(image,1000)
+      pag[state].style.background="gray"
+        
+     }
+     
+     setInterval(changeImage,2000)
+ </script>
+  
+
+ 
+
+</body>
+</html>
